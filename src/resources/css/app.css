@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+}
+
+.logo__img {
+    width: 8%;
+}
+
+img {
+    width: 100%;
+}
