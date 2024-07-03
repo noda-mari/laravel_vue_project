@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('words', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
-            $table->string('name')->unique();
+            $table->string('word')->unique();
             $table->string('meaning');
             $table->string('example_sentence')->nullable();
             $table->timestamps();
