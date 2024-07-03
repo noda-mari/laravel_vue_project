@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Word extends Model
 {
     use HasFactory;
+
+    protected $guarded = array('id');
+
+    protected $fillable = [
+        'category_id',
+        'word',
+        'meaning',
+        'example_sentence',
+    ];
+
+    
 }
